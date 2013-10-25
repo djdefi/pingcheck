@@ -8,10 +8,10 @@ To learn PHP and other web related tech.
 
 How?
 ========
-clone the repo 
+[]clone the repo 
 
-Setup MySQL DB Schema:
-```
+[]Setup MySQL DB Schema:
+```sql
 DROP TABLE IF EXISTS `domains`;
 
 CREATE TABLE `domains` (
@@ -20,5 +20,4 @@ CREATE TABLE `domains` (
   PRIMARY KEY (`DomainID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 ```
-
-browse to monitor.php
+[]browse to monitor.php
