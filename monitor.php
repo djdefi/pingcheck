@@ -12,6 +12,5 @@ while($row = mysqli_fetch_array($result))
 
 mysqli_close($mysqli);
 
-echo 'Novacoast Ping Checker';
 echo '<a href="./adddomain.php">Add Domain</a>'
 ?>
