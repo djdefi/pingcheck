@@ -1,4 +1,4 @@
-<title>Bootstrap 101 Template</title>
+<title>Novacoast pingCheck</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
 <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
