@@ -1,5 +1,7 @@
 <?php
-// check responsetime for a webbserver
+// show/update list of domains
+// check response time for a web server
+
 function pingDomain($domain){
     $starttime = microtime(true);
     // supress error messages with @
@@ -17,4 +19,5 @@ function pingDomain($domain){
     }
     return $status;
 }
+
 ?>

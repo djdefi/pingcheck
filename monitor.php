@@ -1,16 +1,45 @@
 <?php
-include './includes/functions.php';
+/*
+ *  Place includes, constant defines and $_GLOBAL settings here.
+ *  Make sure they have appropriate docblocks to avoid phpDocumentor
+ *  construing they are documented by the page-level docblock.
+ */
 include './includes/mysql.php';
+include './includes/functions.php';
 
-$result = mysqli_query($mysqli,"SELECT * FROM domains");
+include './layouts/_header.php';
 
-while($row = mysqli_fetch_array($result))
-  {
-  echo $row['DomainName'] . " " . pingDomain($row['DomainName']) . "" . ms;
-  echo "<br>";
-  }
+?>
 
-mysqli_close($mysqli);
+<div class="container">
 
-echo '<a href="./adddomain.php">Add Domain</a>'
+    <?php
+    /*
+     * Begin body
+     */
+    ?>
+    <span class="titleBlock">
+    40 bytes from ea-in-x93.<span class="title">ping<span class="black">Check</span></span>.com: icmp_seq=0 ttl=55 time=4.18 ms<br>
+    </span>
+
+    <div id="addContainer" class="row">
+        <span class="col-md-1"><button id="addDomain" class="btn btn-warning">Add Domain</button></span>
+        <div id="ajaxContainer" class="col-md-5"></div>
+    </div>
+
+    <div id="resultContainer">
+    </div>
+
+
+
+    <button onClick="refresh();">Refresh</button>
+
+</div>
+
+
+
+<?php
+    
+include './layouts/_footer.php'    
+    
 ?>

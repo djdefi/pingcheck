@@ -1,0 +1,38 @@
+div#addContainer {
+    height: 45px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+form#addDomain {
+    margin-bottom: 0px !important;
+}
+
+div#ajaxContainer {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    bottom: -4px;
+    left: 20px;
+}
+
+span.black {
+    color: #5F6062;
+}
+
+span.title {
+    color: #E28C05;
+    font-size: 2em;
+}
+
+span.titleBlock {
+    color: #eaeaea;
+    font-family: "Courier";
+    font-size: 1.5em;
+    line-height: 100px;
+    display: block;
+    height: 100px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+}
