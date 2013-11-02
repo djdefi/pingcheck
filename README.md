@@ -19,4 +19,6 @@ mysql> USE rmspcheck;
 mysql> SOURCE database/schema.sql
 ```
 
-3) Browse to monitor.php
+3) Edit includes/mysql.php
+
+4) Browse to monitor.php
