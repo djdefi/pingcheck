@@ -11,13 +11,12 @@ How?
 1) Clone the repo 
 
 2) Setup MySQL DB Schema:
-```sql
-DROP TABLE IF EXISTS `domains`;
 
-CREATE TABLE `domains` (
-  `DomainID` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `DomainName` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`DomainID`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 ```
+$ mysql -u user -p
+mysql> CREATE DATABASE rmspcheck;
+mysql> USE rmspcheck;
+mysql> SOURCE database/schema.sql
+```
+
 3) Browse to monitor.php
