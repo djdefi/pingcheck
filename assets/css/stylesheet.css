@@ -1,3 +1,12 @@
+body {
+    background-image: url("../img/tweed.png");
+}
+
+.container {
+    background: white;
+    height: 100%;
+}
+
 div#addContainer {
     height: 45px;
     margin-bottom: 20px;
@@ -13,8 +22,13 @@ div#ajaxContainer {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    bottom: -4px;
+    bottom: -2px;
     left: 20px;
+}
+
+div#resultContainer {
+    font-family: "Courier";
+    font-size: 1.5em;
 }
 
 span.black {
@@ -30,9 +44,10 @@ span.titleBlock {
     color: #eaeaea;
     font-family: "Courier";
     font-size: 1.5em;
-    line-height: 100px;
+    line-height: 150px;
     display: block;
-    height: 100px;
+    height: 150px;
     border-bottom: 1px solid #eaeaea;
     margin-bottom: 20px;
+    text-align: center;
 }

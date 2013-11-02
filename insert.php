@@ -1,17 +1,16 @@
 <?php
 include './includes/mysql.php';
 
+$id = $_POST['s'];
+
 $sql="INSERT INTO domains (DomainName)
 VALUES
-('$_POST[DomainName]')";
+('$id')";
 
 if (!mysqli_query($mysqli,$sql))
   {
   die('Error: ' . mysqli_error($mysqli));
   }
-echo "1 record added";
-echo "<br>";
-echo '<a href="./monitor.php">Return To Monitor</a>';
 
 mysqli_close($mysqli);
 
