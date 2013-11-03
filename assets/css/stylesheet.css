@@ -1,5 +1,16 @@
+html {
+    overflow-y: scroll;
+}
+
 body {
     background-image: url("../img/tweed.png");
+}
+
+button#addDomain {
+    border-radius: 0px 4px 4px 0px;
+    margin-left: -4px;
+    position: relative;
+    z-index: 2;
 }
 
 .container {
@@ -26,9 +37,31 @@ div#ajaxContainer {
     left: 20px;
 }
 
+div.innerContainer {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 div#resultContainer {
     font-family: "Courier";
     font-size: 1.5em;
+}
+
+input.formInput {
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid #ccc;;
+    height: 28px;
+    line-height: 28px;
+    bottom: -1px;
+    position: relative;
+    z-index: 1;
+}
+
+input[type=checkbox] {
+    background: #000;
+    
 }
 
 span.black {
@@ -37,17 +70,17 @@ span.black {
 
 span.title {
     color: #E28C05;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 span.titleBlock {
-    color: #eaeaea;
+    color: #ccc;
     font-family: "Courier";
-    font-size: 1.5em;
-    line-height: 150px;
+    font-size: 1.4em;
+    line-height: 120px;
     display: block;
-    height: 150px;
-    border-bottom: 1px solid #eaeaea;
+    height: 120px;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     text-align: center;
 }

@@ -10,12 +10,12 @@ function pingDomain($domain){
     $status    = 0;
 
     if (!$file){
-        $status = -1;  // Site is down
+        $status = "SITE UNREACHABLE";  // Site is down
     }
     else{
         fclose($file);
         $status = ($stoptime - $starttime) * 1000;
-        $status = floor($status);
+        $status = floor($status)." ms";
     }
     return $status;
 }

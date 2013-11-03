@@ -1,17 +1,19 @@
 $(function() {
 
-    $("#deleteDomain").load("layouts/_result.php");
+    loadResults();
 
-    $("#insertDomain").load("adddomain.php").hide();
-    $("#addDomain").click(function() {
-        if($("#insertDomain").is(':visible')) {
-            //$("#ajaxContainer").animate({width: 'toggle'});
-            $("#insertDomain").fadeOut();
-        } else {
-            //$("#ajaxContainer").animate({width: 'toggle'});
-            $("#insertDomain").fadeIn();
-        } 
-    });
+//    $("#insertDomain").load("layouts/_add.php").hide();
+//    $("#addDomain").click(function() {
+//        if($("#insertDomain").is(':visible')) {
+//            //$("#ajaxContainer").animate({width: 'toggle'});
+//            $("#insertDomain").fadeOut();
+//        } else {
+//            //$("#ajaxContainer").animate({width: 'toggle'});
+//            $("#insertDomain").fadeIn();
+//        } 
+//    });
+//
+    $("#insertDomain").load("layouts/_add.php");
 
     $("#deleteDomain").submit(function(event) {
         event.preventDefault();
@@ -45,7 +47,6 @@ $(function() {
             term = $form.find("input[name='DomainName']").val(),
             url = $form.attr("action");
 
-        $form.fadeOut();
         setTimeout(function(){}, 1000);
         var posting = $.post(url,{s:term}); 
 
@@ -61,4 +62,9 @@ $(function() {
 function refresh() {
     $("#deleteDomain").load("layouts/_result.php");
     var resultContainer = $("#deleteDomain").html();
+}
+
+function loadResults() {
+    $("#deleteDomain").load("layouts/_result.php");
+    //setTimeout(loadResults, 1000);
 }

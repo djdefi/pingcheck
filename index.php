@@ -18,25 +18,24 @@ include './layouts/_header.php';
      * Begin body
      */
     ?>
+    <div class="innerContainer">
     <span class="titleBlock">
     40 bytes from ea-in-x93.<span class="title">ping<span class="black">Check</span></span>.com: icmp_seq=0 ttl=55 time=4.18 ms<br>
     </span>
 
-    <div id="addContainer" class="row">
-        <div class="col-md-1">
-            <span class="inline"><button id="refresh" class="btn btn-warning" onClick="refresh();"><span class="glyphicon glyphicon-refresh"></button></span>
-            <span class="inline"><button id="addDomain" class="btn btn-warning"><span class="glyphicon glyphicon-plus"></span></button></span>
-        </div>
-        <div id="ajaxContainer" class="col-md-5">
+        <div id="addContainer" class="row">
+            <div class="col-md-1">
+                <span class="inline"><button id="refresh" class="btn btn-warning" onClick="refresh();"><span class="glyphicon glyphicon-refresh"></button></span>
+            </div>
             <form id ='insertDomain' action='insert.php' method='post'>
             </form>
         </div>
-    </div>
 
-    <div id="resultContainer">
-        <form id ='deleteDomain' action='delete.php' method='post'>
-        </form>
-        <div id="resultUpdate"></div>
+        <div id="resultContainer">
+            <form id ='deleteDomain' action='delete.php' method='post'>
+            </form>
+            <div id="resultUpdate"></div>
+        </div>
     </div>
 
 </div>
