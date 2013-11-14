@@ -5,7 +5,7 @@
 function pingDomain($domain){
     $starttime = microtime(true);
     // supress error messages with @
-    $file      = @fsockopen($domain, 80, $errno, $errstr, 10);
+    $file      = @fsockopen($domain, 80, $errno, $errstr, 1);
     $stoptime  = microtime(true);
     $status    = 0;
 

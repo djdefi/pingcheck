@@ -20,7 +20,7 @@ include './layouts/_header.php';
     ?>
     <div class="innerContainer">
     <span class="titleBlock">
-    40 bytes from ea-in-x93.<span class="title">ping<span class="black">Check</span></span>.com: icmp_seq=0 ttl=55 time=4.18 ms<br>
+    40 bytes from ea-in-x93.<span class="title">rmsp<span class="black">Check</span></span>.com: icmp_seq=0 ttl=55 time=4.18 ms<br>
     </span>
 
         <div id="addContainer" class="row">
