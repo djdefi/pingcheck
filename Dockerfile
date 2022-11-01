@@ -1,2 +1,2 @@
-FROM php:8.1.9-apache
+FROM php:8.1.12-apache
 COPY . /var/www/html/
